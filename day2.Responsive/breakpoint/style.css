@@ -1,0 +1,72 @@
+@media only screen and (min-width: 1400px) {
+  body {
+    background-color: pink;
+  }
+  .text::after {
+    content: "xxl(extra extra large)=>1400px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  body {
+    background-color: red;
+  }
+  .text::after {
+    content: "xl(extra large)=>1200px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: brown;
+  }
+  .text::after {
+    content: "lg(large)=>992px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: yellow;
+  }
+  .text::after {
+    content: "md(medium)=>768px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  body {
+    background-color: blue;
+  }
+  .text::after {
+    content: "sm(small)=>576px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  body {
+    background-color: green;
+  }
+  .text::after {
+    content: "ls(extra small)<576px";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
