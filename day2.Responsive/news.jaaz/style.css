@@ -9,6 +9,16 @@
     max-width: 40%;
     height: 30vh;
     border-radius: 20px;
+    object-fit: cover;
+  }
+  .aside{
+    max-width: 20%;
+  }
+  .right-side {
+    max-width: 55%;
+  }
+  .cards{
+    max-width: 75%;
   }
 }
 
@@ -18,13 +28,44 @@
     height: auto;
     border-radius: 20px;
   }
+  .card img{
+    max-width: 35%;
+    height: 30vh;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .aside{
+    max-width: 90%;
+    margin-top: 50px;
+  }
+  .cards{
+    max-width: 95%;
+  }
+  .right-side{
+    max-width: 60%;
+  }
 }
 
-@media only screen and (min-width: 340px) and (max-width: 767px) {
+@media only screen  and (max-width: 767px) {
   .pics img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
+  }
+  .cards{
+    max-width: 100%;
+  }
+  .card img{
+    max-width: 35%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .aside{
+    max-width: 90%;
+    margin-top: 50px;
+  }
+  .right-side{
+    max-width: 60%;
   }
 }
 
@@ -36,7 +77,6 @@
   margin-bottom: 60px;
 }
 .cards {
-  width: 60%;
   display: flex;
   flex-direction: column;
   row-gap: 30px;
@@ -47,14 +87,21 @@
 }
 .main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  
 }
 
-aside {
-  width: 30%;
+.aside {
+  background-color: rgb(196, 201, 205);
+  border-radius: 20px;
+  padding: 20px 20px 0 20px;
+
 }
 .right-side {
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  
+
 }
