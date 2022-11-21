@@ -22,10 +22,10 @@
             <a class="nav-link active text-white" aria-current="page" href="#"
               >Хэрэглэгч</a
             >
-            <a class="nav-link text-white" href="#">Ангилал</a>
+            <a class="nav-link text-white-50" href="#">Ангилал</a>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle text-white-50"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -34,7 +34,9 @@
                 Мэдээ</a
               >
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Мэдээ</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Мэдээ</a>
+                </li>
                 <li>
                   <a class="dropdown-item border-bottom" href="#">Сэтгэгдэл</a>
                 </li>
@@ -42,11 +44,11 @@
               </ul>
             </li>
 
-            <a class="nav-link disabled text-white">Сэдэв</a>
+            <a class="nav-link disabled text-muted">Сэдэв</a>
           </div>
         </div>
         <button
-          class="btn d-md-none btn-primary bg-white text-dark d-lg-block"
+          class="btn btn-primary bg-white text-dark d-lg-block d-none"
           type="submit"
         >
           гарах
@@ -68,31 +70,90 @@
     </nav>
 
     <main class="container mx-auto d-flex justify-content-center">
-      <div
-        class="d-flex flex-wrap justify-content-between mt-5"
-        style="width: 50%"
-      >
+      <div class="d-flex flex-wrap justify-content-between mt-5">
         <h1>Ангилал</h1>
-        <button type="button" class="btn btn-outline-primary">Шинэ</button>
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Шинэ
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Ангилал нэмэх
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-footer">
+                <form style="width: 100%">
+                  <div class="mb-3 border-bottom p-4">
+                    <label for="exampleInputEmail1" class="form-label">
+                      <h6>Нэр</h6></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Ангилалийн нэр"
+                    />
+                  </div>
+                </form>
+                <div class="d-flex justify-content-between w-100">
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Устгах
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Хадгалах
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div
           class="d-flex justify-content-between border border-2 rounded p-4 mt-5 mb-3"
           style="width: 100%; height: 10vh"
         >
-          <p class="d-flex align-items-center m-0">Улс төр</p>
+          <h6 class="d-flex align-items-center m-0">Улс төр</h6>
           <button type="button" class="btn btn-light">Засаx</button>
         </div>
         <div
           class="d-flex justify-content-between align-items-center border border-2 rounded p-4 mb-3"
           style="width: 100%; height: 10vh"
         >
-          <p class="d-flex align-items-center m-0">Нийгэм</p>
+          <h6 class="d-flex align-items-center m-0">Нийгэм</h6>
           <button type="button" class="btn btn-light">Засаx</button>
         </div>
         <div
           class="d-flex justify-content-between border border-2 rounded p-4"
           style="width: 100%; height: 10vh"
         >
-          <p class="d-flex align-items-center m-0">Спорт</p>
+          <h6 class="d-flex align-items-center m-0">Спорт</h6>
           <button type="button" class="btn btn-light">Засаx</button>
         </div>
       </div>
