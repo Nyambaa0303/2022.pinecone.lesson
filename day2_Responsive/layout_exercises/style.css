@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.nav-img{
+    width: 30px;
+    height:30px;
+    background-color: rgb(243, 125, 125);
+    border-radius: 50%;
+}
+header{
+    background-color: gray;
+}
+.navbar{
+    width: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dropdown{
+    width: 20%;
+    height: 60px;
+    background-color: rgb(188, 245, 188);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 80%;
+    background-color: pink;
+}
+.nav-right{
+    width: 90%;
+    display: flex;
+
+}
